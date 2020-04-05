@@ -1,0 +1,47 @@
+.calculator {
+  max-width: 350px;
+  margin: 0 auto;
+  .cal_title {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: $base1;
+    padding: 15px 0px;
+    text-align: center;
+  }
+  .keypad_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 33%;
+      button {
+        width: 100%;
+        padding: 7px 15px;
+        border: 1px solid #f9f9f9;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .output {
+    margin: 0px 0px 1px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 15px 0px;
+    min-height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
